@@ -1,4 +1,4 @@
-#include "arduino.h"
+#include <arduino.h>
 #include <EEPROM.h>
 
 #define EEPROM_write(address, p) {int i = 0; byte *pp = (byte*)&(p);for(; i < sizeof(p); i++) EEPROM.write(address+i, pp[i]);}
